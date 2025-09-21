@@ -17,10 +17,7 @@ import {
   FiTrendingUp as Rocket,
 } from "react-icons/fi";
 import About from "./component/sections/About";
-import CTA from "./component/sections/CTA";
-import FoundersMessage from "./component/sections/FoundersMessage";
-import HowItWorks from "./component/sections/HowItWorks";
-import Services from "./component/sections/Services";
+
 // import { About, Services, HowItWorks, CTA, FoundersMessage } from './components/sections';
 // import LiveChat from './components/LiveChat';
 
@@ -204,17 +201,17 @@ export default function Home() {
 
       <About />
 
-      {/* Services Section */}
-      <Services />
+    
+      {/* <Services />
 
-      {/* How It Works Section */}
+    
       <HowItWorks />
 
-      {/* CTA Section */}
+     
       <CTA />
 
-      {/* Founder's Message Section */}
-      <FoundersMessage />
+    
+      <FoundersMessage /> */}
     </>
   );
 }
