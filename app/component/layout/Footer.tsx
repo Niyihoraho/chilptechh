@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} CHILPTECH. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ArtCode. All rights reserved.</p>
         </div>
       </div>
     </footer>
