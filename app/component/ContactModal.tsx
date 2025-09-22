@@ -46,7 +46,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-[60] flex items-center justify-center p-4 transition-all duration-300 ${
+      className={`fixed inset-0 z-[60] flex items-center justify-center p-2 sm:p-4 transition-all duration-300 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       onClick={handleBackdropClick}
@@ -58,82 +58,82 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       
       {/* Modal Content */}
       <div
-        className={`relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 transform transition-all duration-300 ${
+        className={`relative bg-white rounded-xl sm:rounded-2xl shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl w-full mx-2 sm:mx-4 max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${
           isVisible ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'
         }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900">Get In Touch</h2>
+        <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-100 sticky top-0 bg-white rounded-t-xl sm:rounded-t-2xl">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Get In Touch</h2>
           <button
             onClick={onClose}
-            className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors duration-200"
+            className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors duration-200 flex-shrink-0"
             aria-label="Close modal"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
 
         {/* Contact Information */}
-        <div className="p-6">
-          <div className="bg-gradient-to-br from-[#1e40af] to-[#059669] text-white rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center">Contact Information</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="text-blue-200 w-6 h-6" />
+        <div className="p-4 sm:p-6">
+          <div className="bg-gradient-to-br from-[#1e40af] to-[#059669] text-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-6 text-center">Contact Information</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div>
-                  <p className="text-blue-100 text-sm font-medium">Email</p>
-                  <span className="font-semibold text-lg">chilptechfirm@gmail.com</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-blue-200 w-6 h-6" />
-                </div>
-                <div>
-                  <p className="text-blue-100 text-sm font-medium">Phone</p>
-                  <span className="font-semibold text-lg">+250 780658582</span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-blue-100 text-xs sm:text-sm font-medium">Email</p>
+                  <span className="font-semibold text-sm sm:text-base lg:text-lg break-all">chilptechfirm@gmail.com</span>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="text-blue-200 w-6 h-6" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div>
-                  <p className="text-blue-100 text-sm font-medium">WhatsApp</p>
-                  <span className="font-semibold text-lg">Available 24/7</span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-blue-100 text-xs sm:text-sm font-medium">Phone</p>
+                  <span className="font-semibold text-sm sm:text-base lg:text-lg">+250 780658582</span>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-blue-200 w-6 h-6" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div>
-                  <p className="text-blue-100 text-sm font-medium">Location</p>
-                  <span className="font-semibold text-lg">Kigali Tech Hub, Rwanda</span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-blue-100 text-xs sm:text-sm font-medium">WhatsApp</p>
+                  <span className="font-semibold text-sm sm:text-base lg:text-lg">Available 24/7</span>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-blue-100 text-xs sm:text-sm font-medium">Location</p>
+                  <span className="font-semibold text-sm sm:text-base lg:text-lg">Kigali Tech Hub, Rwanda</span>
                 </div>
               </div>
             </div>
 
             {/* WhatsApp Button */}
-            <div className="mt-8 text-center">
+            <div className="mt-6 sm:mt-8 text-center">
               <button
                 onClick={() => window.open('https://wa.me/250780658582', '_blank')}
-                className="bg-white text-[#059669] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center space-x-3 mx-auto"
+                className="bg-white text-[#059669] px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center space-x-2 sm:space-x-3 mx-auto w-full sm:w-auto"
               >
-                <MessageCircle className="w-6 h-6" />
-                <span>Start WhatsApp Chat</span>
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+                <span className="text-sm sm:text-base">Start WhatsApp Chat</span>
               </button>
             </div>
 
             {/* Additional Info */}
-            <div className="mt-6 p-4 bg-white/10 rounded-lg">
-              <p className="text-sm text-blue-100 text-center">
+            <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white/10 rounded-lg">
+              <p className="text-xs sm:text-sm text-blue-100 text-center leading-relaxed">
                 <span className="font-semibold">Free Consultation</span> - 
                 Let&apos;s discuss how we can help your business grow with exceptional customer support.
               </p>
