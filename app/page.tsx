@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import {
   FiArrowRight as ArrowRight,
   FiCheckCircle as CheckCircle,
@@ -21,6 +22,7 @@ import CTA from "./component/sections/CTA";
 import FoundersMessage from "./component/sections/FoundersMessage";
 import HowItWorks from "./component/sections/HowItWorks";
 import Services from "./component/sections/Services";
+import ContactModal from "./component/ContactModal";
 // import { About, Services, HowItWorks, CTA, FoundersMessage } from './components/sections';
 // import LiveChat from './components/LiveChat';
 
@@ -39,8 +41,12 @@ const IndustryItem = ({ icon: Icon, name }: IndustryItemProps) => (
 );
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      
       {/* Hero Section */}
       <section
         id="home"
@@ -60,18 +66,18 @@ export default function Home() {
                 loyalty, and growth across Africa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link
-                  href="/book"
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="bg-[#1e40af] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-700 transition duration-300 shadow-xl text-center transform hover:scale-105"
                 >
                   Start Your 14-Day Free Trial
-                </Link>
-                <Link
-                  href="/book"
+                </button>
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="border-2 border-[#1e40af] text-[#1e40af] px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#1e40af] hover:text-white transition duration-300 text-center transform hover:scale-105"
                 >
                   Book a Consultation
-                </Link>
+                </button>
               </div>
               <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
                 <div className="flex items-center gap-2">

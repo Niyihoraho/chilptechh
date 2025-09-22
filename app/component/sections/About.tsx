@@ -44,13 +44,13 @@ export default function About() {
             </div>
           </div>
           <div className="relative">
-            {/* <Image 
+            <Image 
               src="/chilpppp.jpg" 
               alt="CHILPTECH Team" 
               width={600}
               height={400}
               className="rounded-2xl shadow-2xl"
-            /> */}
+            />
             <div className="absolute -bottom-6 -right-6 bg-[#1e40af] text-white p-6 rounded-xl shadow-lg">
               <div className="text-center">
                 <div className="text-2xl font-bold">24/7</div>
