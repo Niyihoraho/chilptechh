@@ -13,7 +13,6 @@ import {
   FiClipboard as Clipboard,
   FiZap as Zap,
   FiShield as Shield,
-  FiTrendingUp as TrendingUp,
   FiHome as Building,
   FiBarChart2 as ChartLine,
   FiBriefcase as Industry

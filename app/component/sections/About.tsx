@@ -17,7 +17,7 @@ export default function About() {
               services covering calls, emails, live chat, social media, and technical support.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Built on Rwanda's young, multilingual workforce and modern support technologies, we go beyond
+              Built on Rwanda&apos;s young, multilingual workforce and modern support technologies, we go beyond
               being a service provider we are a trusted growth partner. With a customer first mindset, we
               believe loyalty, trust, and satisfaction are the keys to long-term success. Our mission is to
               empower businesses, create jobs, and position Rwanda as a leading hub for customer support in

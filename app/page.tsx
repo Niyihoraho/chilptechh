@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import {
   FiArrowRight as ArrowRight,
@@ -11,11 +10,6 @@ import {
   FiShield as Shield,
   FiBarChart2 as BarChart,
   FiMapPin as MapPin,
-  FiShoppingCart as ShoppingCart,
-  FiPhone as Phone,
-  FiHome as Building,
-  FiHome as Hotel,
-  FiTrendingUp as Rocket,
 } from "react-icons/fi";
 import About from "./component/sections/About";
 import CTA from "./component/sections/CTA";
@@ -31,14 +25,6 @@ interface IndustryItemProps {
   icon: React.ComponentType<{ className?: string }>;
   name: string;
 }
-
-// Reusable Component for Industry Item
-const IndustryItem = ({ icon: Icon, name }: IndustryItemProps) => (
-  <div className="flex items-center gap-2">
-    <Icon className="text-[#1e40af]" />
-    <span className="font-medium">{name}</span>
-  </div>
-);
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);

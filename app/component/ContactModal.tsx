@@ -135,7 +135,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div className="mt-6 p-4 bg-white/10 rounded-lg">
               <p className="text-sm text-blue-100 text-center">
                 <span className="font-semibold">Free Consultation</span> - 
-                Let's discuss how we can help your business grow with exceptional customer support.
+                Let&apos;s discuss how we can help your business grow with exceptional customer support.
               </p>
             </div>
           </div>

@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { 
   FiMessageSquare as QuoteLeft, 
-  FiUser as User, 
   FiZap as Rocket, 
   FiUsers as Handshake, 
   FiHeart as Heart 
@@ -37,12 +36,12 @@ export default function FoundersMessage() {
             {/* Message Content */}
             <div className="flex-1">
               <blockquote className="text-lg lg:text-xl text-gray-700 leading-relaxed mb-8 italic font-medium">
-                "At CHILPTECH, we are more than an outsourcing firm, we are a team united by a vision: to
+                &ldquo;At CHILPTECH, we are more than an outsourcing firm, we are a team united by a vision: to
                 transform customer support into a driver of business growth and national development.
                 Together, we empower businesses with world-class, multilingual solutions while creating jobs
-                and opportunities for Rwanda's young talent. By combining innovation, integrity, and a
+                and opportunities for Rwanda&apos;s young talent. By combining innovation, integrity, and a
                 customer-first mindset, we are building a future where businesses thrive and Rwanda stands
-                as a hub for excellence in Africa."
+                as a hub for excellence in Africa.&rdquo;
               </blockquote>
 
               {/* Founder Info */}
