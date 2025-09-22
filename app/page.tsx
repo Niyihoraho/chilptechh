@@ -196,7 +196,6 @@ export default function Home() {
 
       <About />
 
-      Services Section
       <Services />
 
     
