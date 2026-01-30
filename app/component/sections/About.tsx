@@ -9,44 +9,46 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">About CHILPTECH</h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-1">
-              At CHILPTECH Customer Support Firm, we help businesses in Rwanda and beyond deliver world class
-              customer experiences through reliable, scalable, and multilingual support solutions. We
-              specialize in serving SMEs, startups, and enterprises with flexible and affordable outsourcing
-              services covering calls, emails, live chat, social media, and technical support.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Built on Rwanda&apos;s young, multilingual workforce and modern support technologies, we go beyond
-              being a service provider we are a trusted growth partner. With a customer first mindset, we
-              believe loyalty, trust, and satisfaction are the keys to long-term success. Our mission is to
-              empower businesses, create jobs, and position Rwanda as a leading hub for customer support in
-              Africa.
-            </p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">About Chilptech</h2>
+            <div className="space-y-6 text-lg text-gray-600 leading-relaxed mb-8">
+              <p>
+                Chilptech is an institutional service systems partner dedicated to transforming how organizations serve, engage, and respond to the people they work with. We provide professional customer service, community engagement, and citizen satisfaction solutions for enterprises, NGOs, and government agencies.
+              </p>
+              <p>
+                Our mission is to help institutions build structured, accountable, and people-centered service systems that improve stakeholder experience, strengthen trust, and enhance organizational credibility. We focus on practical and sustainable approaches, combining governance, clear processes, and staff capacity building to deliver measurable improvements in service quality.
+              </p>
+              <p>
+                At Chilptech, we believe that strong institutions are built on strong service systems. Our work supports organizations in creating lasting impact by improving how they listen, respond, and deliver value to the communities and clients they serve as their main asset.
+              </p>
+            </div>
 
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-6 mb-10">
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-[#059669] text-xl" />
-                <span className="text-gray-700">Rwanda-based excellence</span>
+                <span className="text-gray-700">Institutional Excellence</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-[#059669] text-xl" />
-                <span className="text-gray-700">International standards</span>
+                <span className="text-gray-700">Accountability Systems</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-[#059669] text-xl" />
-                <span className="text-gray-700">Proven track record</span>
+                <span className="text-gray-700">Capacity Building</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-[#059669] text-xl" />
-                <span className="text-gray-700">Cultural alignment</span>
+                <span className="text-gray-700">Measurable Impact</span>
               </div>
+            </div>
+
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl italic text-gray-700">
+              “At CHILPTECH, we are more than an outsourcing firm, we are a team united by a vision: to transform customer support into a driver of business growth and national development. Together, we empower Businesses, NGOs and Government Agencies with world-class customer satisfaction solutions while creating jobs and opportunities for Rwanda&apos;s young talent. By combining innovation, integrity, and a customer-first mindset, we are building a future where businesses thrive and Rwanda stands as a hub for excellence in Africa.”
             </div>
           </div>
           <div className="relative">
-            <Image 
-              src="/chilpppp.jpg" 
-              alt="CHILPTECH Team" 
+            <Image
+              src="/chilpppp.jpg"
+              alt="CHILPTECH Team"
               width={600}
               height={400}
               className="rounded-2xl shadow-2xl"

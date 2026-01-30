@@ -130,9 +130,10 @@ export default function Services() {
       </section>
 
       {/* Detailed Services Section */}
-      <div className={`transition-all duration-700 ease-in-out overflow-hidden ${showDetailedServices ? 'max-h-[3000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`transition-all duration-700 ease-in-out overflow-hidden ${showDetailedServices ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'}`}>
         <section className="py-24 bg-gray-50 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Business Packages Header */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Business Service Packages</h2>
               <div className="w-24 h-1 bg-[#1e40af] mx-auto rounded-full mb-6"></div>
@@ -141,8 +142,8 @@ export default function Services() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-10">
-              {/* Package 1 */}
+            <div className="grid lg:grid-cols-2 gap-10 mb-24">
+              {/* Business Package 1 */}
               <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col">
                 <div className="bg-gradient-to-r from-[#1e40af] to-blue-700 p-8 text-white">
                   <div className="flex items-center gap-4 mb-4">
@@ -165,52 +166,35 @@ export default function Services() {
                     <div className="relative pl-6 border-l-2 border-blue-100 ml-2">
                       <span className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></span>
                       <h6 className="font-bold text-gray-800 mb-2 text-base">Phase 1: Consultancy</h6>
-                      <ul className="text-gray-600 space-y-1 text-sm">
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Service audit</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Stakeholder interviews</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Gap analysis report</li>
-                      </ul>
+                      <p className="text-gray-600 text-sm mb-2">Service audit, stakeholder interviews, gap analysis report.</p>
                     </div>
 
                     <div className="relative pl-6 border-l-2 border-blue-100 ml-2">
                       <span className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></span>
                       <h6 className="font-bold text-gray-800 mb-2 text-base">Phase 2: System Design</h6>
-                      <ul className="text-gray-600 space-y-1 text-sm">
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Service workflow</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Roles & responsibilities</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Escalation structure</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Communication standards</li>
-                      </ul>
+                      <p className="text-gray-600 text-sm mb-2">Service workflow, roles & responsibilities, escalation structure, communication standards.</p>
                     </div>
                     <div className="relative pl-6 border-l-2 border-blue-100 ml-2">
                       <span className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></span>
                       <h6 className="font-bold text-gray-800 mb-2 text-base">Phase 3: Documentation</h6>
-                      <ul className="text-gray-600 space-y-1 text-sm">
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> SOP manual</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Complaint handling procedures</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Response templates & Reporting formats</li>
-                      </ul>
+                      <p className="text-gray-600 text-sm mb-2">SOP manual, complaint handling procedures, response templates, reporting formats.</p>
                     </div>
                     <div className="relative pl-6 border-l-2 border-transparent ml-2">
                       <span className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></span>
                       <h6 className="font-bold text-gray-800 mb-2 text-base">Phase 4: Training</h6>
-                      <ul className="text-gray-600 space-y-1 text-sm">
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Frontline staff training</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Supervisor training</li>
-                        <li className="flex items-center gap-2"><div className="w-1 h-1 bg-gray-400 rounded-full"></div> Service culture orientation</li>
-                      </ul>
+                      <p className="text-gray-600 text-sm mb-2">Frontline staff training, supervisor training, service culture orientation.</p>
                     </div>
                   </div>
 
-                  <div className="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100 mt-auto">
-                    <h5 className="flex items-center gap-2 font-bold text-emerald-800 mb-4 uppercase text-sm tracking-wide">
+                  <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 mt-auto">
+                    <h5 className="flex items-center gap-2 font-bold text-blue-800 mb-4 uppercase text-sm tracking-wide">
                       <Target className="w-5 h-5" />
                       Client Outcomes
                     </h5>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {['Customer service operating model', 'Trained staff', 'Documented procedures', 'Ready-to-run system'].map((item, idx) => (
+                      {['Operating model', 'Trained staff', 'Documented SOPs', 'Ready-to-run system'].map((item, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
-                          <CheckCircle className="text-emerald-500 w-4 h-4 flex-shrink-0" />
+                          <CheckCircle className="text-blue-500 w-4 h-4 flex-shrink-0" />
                           <span>{item}</span>
                         </div>
                       ))}
@@ -219,9 +203,9 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Package 2 */}
+              {/* Business Package 2 */}
               <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col h-full">
-                <div className="bg-gradient-to-r from-indigo-700 to-indigo-900 p-8 text-white">
+                <div className="bg-gradient-to-r from-blue-700 to-[#1e40af] p-8 text-white">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm">
                       <Activity className="w-6 h-6 text-white" />
@@ -229,26 +213,25 @@ export default function Services() {
                     <h3 className="text-2xl font-bold">Package 2: CSOS</h3>
                   </div>
                   <h4 className="text-lg font-medium opacity-90 mb-2">Customer Service Operations Support</h4>
-                  <p className="text-indigo-100 text-sm italic border-l-2 border-indigo-400 pl-3">"For institutions that want ongoing quality, control, and accountability."</p>
+                  <p className="text-blue-100 text-sm italic border-l-2 border-blue-400 pl-3">"For institutions that want ongoing quality, control, and accountability."</p>
                 </div>
 
                 <div className="p-8 flex-1 flex flex-col">
                   <h5 className="font-bold text-gray-900 text-lg mb-6 flex items-center gap-2 pb-2 border-b border-gray-100">
-                    <span className="w-2 h-8 bg-indigo-600 rounded-full"></span>
+                    <span className="w-2 h-8 bg-blue-600 rounded-full"></span>
                     What We Deliver
                   </h5>
 
                   <div className="grid grid-cols-1 gap-4 mb-8">
                     {[
                       'Service monitoring and quality assessment',
-                      'Performance reviews',
-                      'Quality assessments',
-                      'Improvement recommendations',
-                      'Refresher trainings',
-                      'Management reports'
+                      'Performance reviews & improvements',
+                      'Regular quality assessments',
+                      'Refresher staff trainings',
+                      'Detailed management reports'
                     ].map((item, i) => (
-                      <div key={i} className="flex items-start p-3 rounded-lg bg-gray-50 border border-gray-100 hover:border-indigo-100 transition-colors">
-                        <div className="mt-1 p-1 bg-indigo-100 rounded-md mr-3 text-indigo-600">
+                      <div key={i} className="flex items-start p-3 rounded-lg bg-gray-50 border border-gray-100 hover:border-blue-100 transition-colors">
+                        <div className="mt-1 p-1 bg-blue-100 rounded-md mr-3 text-blue-600">
                           <CheckCircle className="w-3 h-3" />
                         </div>
                         <span className="text-gray-700 font-medium">{item}</span>
@@ -256,20 +239,15 @@ export default function Services() {
                     ))}
                   </div>
 
-                  <div className="bg-indigo-50/50 p-6 rounded-2xl border border-indigo-100 mt-auto">
-                    <h5 className="flex items-center gap-2 font-bold text-indigo-800 mb-4 uppercase text-sm tracking-wide">
+                  <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 mt-auto">
+                    <h5 className="flex items-center gap-2 font-bold text-blue-800 mb-4 uppercase text-sm tracking-wide">
                       <Target className="w-5 h-5" />
                       Key Results
                     </h5>
-                    <div className="space-y-3">
-                      {[
-                        'Continuous improvement',
-                        'Service discipline',
-                        'Management visibility',
-                        'Institutional reliability'
-                      ].map((item, idx) => (
-                        <div key={idx} className="flex items-center gap-3 text-gray-700 text-sm font-medium">
-                          <span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+                    <div className="grid grid-cols-2 gap-3">
+                      {['Continuous improvement', 'Service discipline', 'Management visibility', 'Reliability'].map((item, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
                           <span>{item}</span>
                         </div>
                       ))}
@@ -279,6 +257,227 @@ export default function Services() {
               </div>
             </div>
 
+            {/* NGO Packages Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">NGO Service Packages</h2>
+              <div className="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Specialized engagement systems designed to strengthen community trust and donor compliance.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-10 mb-24">
+              {/* NGO Package 1 */}
+              <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col">
+                <div className="bg-gradient-to-r from-emerald-600 to-teal-700 p-8 text-white">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm">
+                      <Globe className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Package 1</h3>
+                  </div>
+                  <h4 className="text-lg font-medium opacity-90 mb-2">Community & Stakeholder Engagement System Setup</h4>
+                  <p className="text-emerald-100 text-sm italic border-l-2 border-emerald-400 pl-3">"For NGOs that want to establish a structured and professional engagement system."</p>
+                </div>
+
+                <div className="p-8 flex-1">
+                  <h5 className="font-bold text-gray-900 text-lg mb-6 flex items-center gap-2 pb-2 border-b border-gray-100">
+                    <span className="w-2 h-8 bg-emerald-600 rounded-full"></span>
+                    What We Do
+                  </h5>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      'Map communities and stakeholders',
+                      'Design engagement and participation framework',
+                      'Set up feedback and grievance system',
+                      'Develop engagement procedures (SOPs)',
+                      'Train field and program staff'
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-gray-700">
+                        <CheckCircle className="text-emerald-500 w-5 h-5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100 mt-auto">
+                    <h5 className="flex items-center gap-2 font-bold text-emerald-800 mb-4 uppercase text-sm tracking-wide">
+                      <Target className="w-5 h-5" />
+                      Output
+                    </h5>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {['Engagement structure', 'Trained field staff', 'Documented processes', 'Ready-to-use system'].map((item, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* NGO Package 2 */}
+              <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col">
+                <div className="bg-gradient-to-r from-teal-600 to-emerald-700 p-8 text-white">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm">
+                      <Activity className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Package 2</h3>
+                  </div>
+                  <h4 className="text-lg font-medium opacity-90 mb-2">Community & Stakeholder Engagement Management</h4>
+                  <p className="text-emerald-100 text-sm italic border-l-2 border-emerald-400 pl-3">"For NGOs that want ongoing quality and accountability in engagement."</p>
+                </div>
+
+                <div className="p-8 flex-1">
+                  <h5 className="font-bold text-gray-900 text-lg mb-6 flex items-center gap-2 pb-2 border-b border-gray-100">
+                    <span className="w-2 h-8 bg-teal-600 rounded-full"></span>
+                    What We Do (Ongoing)
+                  </h5>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      'Support community meetings and consultations',
+                      'Monitor feedback and grievances',
+                      'Provide regular engagement reports',
+                      'Deliver continuous refresher training',
+                      'Recommend improvements based on data'
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-gray-700">
+                        <CheckCircle className="text-teal-500 w-5 h-5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="bg-teal-50/50 p-6 rounded-2xl border border-teal-100 mt-auto">
+                    <h5 className="flex items-center gap-2 font-bold text-teal-800 mb-4 uppercase text-sm tracking-wide">
+                      <Target className="w-5 h-5" />
+                      Output
+                    </h5>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {['Strong community trust', 'Ethical participation', 'Donor compliance', 'Continuous improvement'].map((item, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                          <div className="w-1.5 h-1.5 rounded-full bg-teal-500"></div>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Government Packages Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Government Agency Service Packages</h2>
+              <div className="w-24 h-1 bg-purple-600 mx-auto rounded-full mb-6"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Aligned with <span className="font-bold text-purple-700">Rwanda NST2</span> – aiming for 90%+ service quality by 2029.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-10">
+              {/* Govt Package 1 */}
+              <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col">
+                <div className="bg-gradient-to-r from-purple-600 to-indigo-700 p-8 text-white">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm">
+                      <Government className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Package 1</h3>
+                  </div>
+                  <h4 className="text-lg font-medium opacity-90 mb-2">Quality Service Delivery & Community Engagement System setup</h4>
+                  <p className="text-purple-100 text-sm italic border-l-2 border-purple-400 pl-3">"For public institutions that want to improve citizen experience and service quality."</p>
+                </div>
+
+                <div className="p-8 flex-1">
+                  <h5 className="font-bold text-gray-900 text-lg mb-6 flex items-center gap-2 pb-2 border-b border-gray-100">
+                    <span className="w-2 h-8 bg-purple-600 rounded-full"></span>
+                    What We Do
+                  </h5>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      'Assess current citizen service practices',
+                      'Design service standards and governance',
+                      'Set up citizen feedback and grievance system',
+                      'Develop service procedures (SOPs)',
+                      'Train public servants for excellence'
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-gray-700">
+                        <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="bg-purple-50/50 p-6 rounded-2xl border border-purple-100 mt-auto">
+                    <h5 className="flex items-center gap-2 font-bold text-purple-800 mb-4 uppercase text-sm tracking-wide">
+                      <Target className="w-5 h-5" />
+                      What You Get
+                    </h5>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {['Citizen service model', 'Trained public servants', 'Clear accountability', 'Satisfaction system'].map((item, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                          <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Govt Package 2 */}
+              <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col">
+                <div className="bg-gradient-to-r from-indigo-600 to-purple-700 p-8 text-white">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm">
+                      <Activity className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Package 2</h3>
+                  </div>
+                  <h4 className="text-lg font-medium opacity-90 mb-2">Citizen Satisfaction Operations Support Services</h4>
+                  <p className="text-purple-100 text-sm italic border-l-2 border-purple-400 pl-3">"For government agencies that want continuous service quality improvement."</p>
+                </div>
+
+                <div className="p-8 flex-1">
+                  <h5 className="font-bold text-gray-900 text-lg mb-6 flex items-center gap-2 pb-2 border-b border-gray-100">
+                    <span className="w-2 h-8 bg-indigo-600 rounded-full"></span>
+                    What We Do (Ongoing)
+                  </h5>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      'Monitor citizen satisfaction metrics',
+                      'Conduct regular service quality reviews',
+                      'Track complaints and feedback loops',
+                      'Provide detailed performance reports',
+                      'Support service improvement actions'
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-gray-700">
+                        <CheckCircle className="text-indigo-500 w-5 h-5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="bg-indigo-50/50 p-6 rounded-2xl border border-indigo-100 mt-auto">
+                    <h5 className="flex items-center gap-2 font-bold text-indigo-800 mb-4 uppercase text-sm tracking-wide">
+                      <Target className="w-5 h-5" />
+                      Output
+                    </h5>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {['Better service delivery', 'Higher citizen satisfaction', 'Stronger public trust', 'NST2 target progress'].map((item, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
+                          <div className="w-1.5 h-1.5 rounded-full bg-indigo-500"></div>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
