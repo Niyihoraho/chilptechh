@@ -41,13 +41,11 @@ export default function About() {
               </div>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl italic text-gray-700">
-              “At CHILPTECH, we are more than an outsourcing firm, we are a team united by a vision: to transform customer support into a driver of business growth and national development. Together, we empower Businesses, NGOs and Government Agencies with world-class customer satisfaction solutions while creating jobs and opportunities for Rwanda&apos;s young talent. By combining innovation, integrity, and a customer-first mindset, we are building a future where businesses thrive and Rwanda stands as a hub for excellence in Africa.”
-            </div>
+
           </div>
           <div className="relative">
             <Image
-              src="/chilpppp.jpg"
+              src="/About.png"
               alt="CHILPTECH Team"
               width={600}
               height={400}

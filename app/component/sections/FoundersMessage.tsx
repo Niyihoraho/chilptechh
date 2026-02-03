@@ -1,11 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { 
-  FiMessageSquare as QuoteLeft, 
-  FiZap as Rocket, 
-  FiUsers as Handshake, 
-  FiHeart as Heart 
+import {
+  FiMessageSquare as QuoteLeft,
+  FiZap as Rocket,
+  FiUsers as Handshake,
+  FiHeart as Heart
 } from 'react-icons/fi';
 
 export default function FoundersMessage() {
@@ -36,20 +36,15 @@ export default function FoundersMessage() {
             {/* Message Content */}
             <div className="flex-1">
               <blockquote className="text-lg lg:text-xl text-gray-700 leading-relaxed mb-8 italic font-medium">
-                &ldquo;At CHILPTECH, we are more than an outsourcing firm, we are a team united by a vision: to
-                transform customer support into a driver of business growth and national development.
-                Together, we empower businesses with world-class, multilingual solutions while creating jobs
-                and opportunities for Rwanda&apos;s young talent. By combining innovation, integrity, and a
-                customer-first mindset, we are building a future where businesses thrive and Rwanda stands
-                as a hub for excellence in Africa.&rdquo;
+                &ldquo;At CHILPTECH, we are more than an outsourcing firm, we are a team united by a vision: to transform customer support into a driver of business growth and national development. Together, we empower Businesses, NGOs and Government Agencies with world-class customer satisfaction solutions while creating jobs and opportunities for Rwanda&apos;s young talent. By combining innovation, integrity, and a customer-first mindset, we are building a future where businesses thrive and Rwanda stands as a hub for excellence in Africa.&rdquo;
               </blockquote>
 
               {/* Founder Info */}
               <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-                  <Image 
-                    src="/seth.jpg" 
-                    alt="NKURUNZIZA Seth - Founder of CHILPTECH" 
+                  <Image
+                    src="/seth.jpg"
+                    alt="NKURUNZIZA Seth - Founder of CHILPTECH"
                     width={64}
                     height={64}
                     className="w-full h-full object-cover"

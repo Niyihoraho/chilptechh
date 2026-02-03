@@ -51,11 +51,10 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-2xl italic font-medium text-[#1e40af] mb-4 leading-relaxed">
-                “We are CHILPTECH – The Voice of the Customer”
+                “We are CHILPTECH – The Voice of Customers”
               </p>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Multilingual, tech-driven support that boosts satisfaction,
-                loyalty, and growth across Africa
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Service quality system, citizen satisfaction frameworks, institutional service governance, feedback and accountability systems that boosts satisfaction, loyalty, and growth across Africa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <button
