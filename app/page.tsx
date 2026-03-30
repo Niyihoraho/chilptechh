@@ -19,6 +19,7 @@ import FoundersMessage from "./component/sections/FoundersMessage";
 import HowItWorks from "./component/sections/HowItWorks";
 import Services from "./component/sections/Services";
 import WhyChooseUs from "./component/sections/WhyChooseUs";
+import Partners from "./component/sections/Partners";
 import ContactModal from "./component/ContactModal";
 // import { About, Services, HowItWorks, CTA, FoundersMessage } from './components/sections';
 // import LiveChat from './components/LiveChat';
@@ -136,6 +137,9 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <WhyChooseUs />
+
+      {/* Partners Section */}
+      <Partners />
 
       <About />
 
