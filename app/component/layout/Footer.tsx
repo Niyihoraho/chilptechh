@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { 
-  FaFacebook as Facebook, 
-  FaTwitter as Twitter, 
-  FaInstagram as Instagram, 
-  FaLinkedin as Linkedin, 
-  FaEnvelope as Mail, 
-  FaPhone as Phone, 
-  FaMapMarkerAlt as MapPin 
+import {
+  FaFacebook as Facebook,
+  FaTwitter as Twitter,
+  FaInstagram as Instagram,
+  FaLinkedin as Linkedin,
+  FaEnvelope as Mail,
+  FaPhone as Phone,
+  FaMapMarkerAlt as MapPin
 } from 'react-icons/fa';
 
 export default function Footer() {
@@ -37,7 +37,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -47,13 +47,13 @@ export default function Footer() {
               <li><Link href="#" className="text-gray-300 hover:text-white transition duration-300">Terms of Service</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="text-[#1e40af]" />
-                <span className="text-gray-300">chilptechfirm@gmail.com</span>
+                <span className="text-gray-300">info@chilptech.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-[#1e40af]" />
@@ -70,7 +70,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
           <p>© {new Date().getFullYear()} ArtCode. All rights reserved.</p>
         </div>

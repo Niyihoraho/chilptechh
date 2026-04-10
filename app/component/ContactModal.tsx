@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { 
-  FiX as X, 
-  FiMail as Mail, 
-  FiPhone as Phone, 
-  FiMessageCircle as MessageCircle, 
-  FiMapPin as MapPin 
+import {
+  FiX as X,
+  FiMail as Mail,
+  FiPhone as Phone,
+  FiMessageCircle as MessageCircle,
+  FiMapPin as MapPin
 } from 'react-icons/fi';
 
 interface ContactModalProps {
@@ -46,21 +46,19 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-[60] flex items-center justify-center p-2 sm:p-4 transition-all duration-300 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+      className={`fixed inset-0 z-[60] flex items-center justify-center p-2 sm:p-4 transition-all duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
       onClick={handleBackdropClick}
       onKeyDown={handleKeyDown}
       tabIndex={-1}
     >
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
-      
+
       {/* Modal Content */}
       <div
-        className={`relative bg-white rounded-xl sm:rounded-2xl shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl w-full mx-2 sm:mx-4 max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${
-          isVisible ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'
-        }`}
+        className={`relative bg-white rounded-xl sm:rounded-2xl shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl w-full mx-2 sm:mx-4 max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isVisible ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'
+          }`}
       >
         {/* Header */}
         <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-100 sticky top-0 bg-white rounded-t-xl sm:rounded-t-2xl">
@@ -85,10 +83,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-blue-100 text-xs sm:text-sm font-medium">Email</p>
-                  <span className="font-semibold text-sm sm:text-base lg:text-lg break-all">chilptechfirm@gmail.com</span>
+                  <span className="font-semibold text-sm sm:text-base lg:text-lg break-all">info@chilptech.com</span>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3 sm:space-x-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
@@ -98,7 +96,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   <span className="font-semibold text-sm sm:text-base lg:text-lg">+250 780658582</span>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3 sm:space-x-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <MessageCircle className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
@@ -108,7 +106,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   <span className="font-semibold text-sm sm:text-base lg:text-lg">Available 24/7</span>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3 sm:space-x-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <MapPin className="text-blue-200 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
@@ -134,7 +132,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             {/* Additional Info */}
             <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white/10 rounded-lg">
               <p className="text-xs sm:text-sm text-blue-100 text-center leading-relaxed">
-                <span className="font-semibold">Free Consultation</span> - 
+                <span className="font-semibold">Free Consultation</span> -
                 Let&apos;s discuss how we can help your business grow with exceptional customer support.
               </p>
             </div>
