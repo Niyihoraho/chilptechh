@@ -58,12 +58,12 @@ export default function Home() {
                 Service quality system, citizen satisfaction frameworks, institutional service governance, feedback and accountability systems that boosts satisfaction, loyalty, and growth across Africa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button
+                {/* <button
                   onClick={() => setIsModalOpen(true)}
                   className="bg-[#1e40af] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-700 transition duration-300 shadow-xl text-center transform hover:scale-105"
                 >
                   Start Your 14-Day Free Trial
-                </button>
+                </button> */}
                 <button
                   onClick={() => setIsModalOpen(true)}
                   className="border-2 border-[#1e40af] text-[#1e40af] px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#1e40af] hover:text-white transition duration-300 text-center transform hover:scale-105"
