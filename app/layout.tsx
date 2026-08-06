@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   title: "CHILPTECH - Customer Support Solutions",
   description: "Multilingual, tech-driven customer support that boosts satisfaction, loyalty, and growth across Africa. Based in Kigali, Rwanda.",
   icons: {
-    icon: '/images/logo.png',
-    shortcut: '/images/logo.png',
-    apple: '/images/logo.png',
+    icon: '/images/lo.png',
+    shortcut: '/images/lo.png',
+    apple: '/images/lo.png',
   },
 };
 
@@ -32,9 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/logo.png" />
-        <link rel="shortcut icon" href="/images/logo.png" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="icon" href="/images/lo.png" />
+        <link rel="shortcut icon" href="/images/lo.png" />
+        <link rel="apple-touch-icon" href="/images/lo.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />

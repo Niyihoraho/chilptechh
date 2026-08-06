@@ -5,7 +5,7 @@ import Image from 'next/image';
 const partners = [
     {
         name: "GBUR",
-        logo: "/partners/GBUR LOGO.png",
+        logo: "/partners/GBUR lo.png",
     },
     {
         name: "Partner 2",
